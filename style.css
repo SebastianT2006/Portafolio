@@ -1,0 +1,71 @@
+body {
+            background-image: url("Pixel\ Art\ GIF.gif");
+            background-repeat: no-repeat;
+            background-size: cover;          /* que ocupe toda la pantalla */
+            background-position: center;     /* centrado */
+            background-attachment: fixed;    /* efecto fondo fijo */
+            margin: 0;
+            padding: 0;
+            color: bisque;
+            padding-top: 80px;
+    }
+
+button {
+    padding: 20px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #00bfff;
+    color: white;
+    font-weight: bold;
+}
+
+
+button:hover {
+    background-color: #000000;
+}
+
+.perfil {
+    border-radius: 50%
+}
+
+.boton1{
+    background-image: url("descarga.jpeg");
+}
+
+
+.navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* transparente */
+    backdrop-filter: blur(20px);          
+    -webkit-backdrop-filter: blur(10px);  
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00bfff;
+}
