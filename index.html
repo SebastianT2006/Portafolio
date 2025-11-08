@@ -6,23 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     
 </head>
 <body>
-    <audio id="bg-music" src="soft-distant-rain-with-birds-for-sleep-432019.mp3" loop autoplay muted></audio>
+<audio id="bg-music" src="soft-distant-rain-with-birds-for-sleep-432019.mp3" loop autoplay muted></audio>
+<button id="sound-btn">
+    <i class="fa-solid fa-music" style="font-size:24px; color:white;"></i>
+</button>
 
 <script>
-    // Espera un instante y luego sube el volumen
-    window.addEventListener("DOMContentLoaded", () => {
-        const music = document.getElementById("bg-music");
+const music = document.getElementById("bg-music");
+    const btn = document.getElementById("sound-btn");
 
-        // Algunos navegadores requieren esperar un poco
-        setTimeout(() => {
-            music.volume = 1.00; // volumen bajo
-            music.muted = false;
-        }, 500);
+    btn.addEventListener("click", () => {
+        music.muted = false;
+        music.volume = 1.0;
+        music.play();
+        btn.style.display = "none";
     });
 </script>
+
 
     <nav class="navbar">
     <ul>
@@ -38,21 +43,44 @@
     
     <center>
         <h1> Este es el portafolio de sebastian Torres</h1>
-        <img class="perfil" src="d0ce8272-ad6b-45c9-8e8b-99a9425b3fff.jpeg" width="230"alt="">
+        <img class="perfil" src="d0ce8272-ad6b-45c9-8e8b-99a9425b3fff.jpeg" width="200"alt="">
+        <h1><BR></h1>
             <table>
     <tr>
-        <td>Actividad 1 de Robinson Andres</td>
-        <td>
+        <div class="botones">
+        <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <td>
             <a href="https://github.com/SebastianT2006/m1_python_actividad_1">
-                <button>Ver actividad 1</button>
+                <button class="boton2">Ver actividad 1 Robinson
+                </button>
             </a>
         </td>
-
-        <td>Actividad semana1 moodle</td>
-        <td>
+        </div>
+        
+        <div class="col-md-6">
+            <td>
             <a href="https://github.com/SebastianT2006/my_python_moodle_week_1">
                 <button class="boton1">Ver actividad moodle week1
-                    <img src="" alt="">
+                </button>
+            </a>
+        </td>
+            
+        </div>
+
+    </div>
+    </div>
+    </div>
+    
+        
+
+        
+        
+        
+                <td>
+            <a href="https://github.com/SebastianT2006/m1_python_actividad_2">
+                <button class="boton3">Ver actividad 2 Robinson
                 </button>
             </a>
         </td>
