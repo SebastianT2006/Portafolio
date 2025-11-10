@@ -1,15 +1,28 @@
 body {
-    background-image: url("Pixel\ Art\ GIF.gif");
+    background-image: url("_.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    color: bisque;
+    color: rgb(0, 0, 0);
     padding-top: 80px;
+    
 }
 
+.sixtyfour {
+color:rgb(133, 243, 8);
+font-family: "Sixtyfour", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-variation-settings:
+
+
+    "BLED" 0,
+    "SCAN" 0;
+}
 button {
     padding: 20px 20px;
     font-size: 16px;
@@ -19,26 +32,67 @@ button {
     background-color: #00bfff;
     color: white;
     font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;   /* transición del zoom */
 }
+
+button:hover {
+    transform: scale(1.15);            /* zoom al pasar el cursor */
+    background-color: #000000;
+}
+
 
 button:hover {
     background-color: #000000;
 }
 
 .perfil {
-    border-radius: 50%;
+    border-radius: 20%;
+    margin-left: 7%;
 }
 
 .boton1 {
-    background-image: url("descarga.jpeg");
+    background-image: url("");
+    color:rgb(255, 255, 255) ;
+    margin-left: 0%;
+    font-family: "Sixtyfour", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+font-size: 16px;
+background-image: url("descarga\ \(1\).jpeg")
 }
 
 .boton2{
-    background-image: url("Screenshot_1.png");
-
+    background-image: url("Screenshot_2.png");
+    color: #d83535;
+    margin-left: -7%;
+    font-family: "Sixtyfour", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+font-size: 16px;
 }
 .boton3{
-    background-image: url("Screenshot_1.png");
+    background-image: url("Screenshot_2.png");
+color: #d83535;
+    margin-left: 7%;
+    width: 100%;
+    font-family: "Sixtyfour", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+font-size: 16px;
 }
 
 .navbar {
